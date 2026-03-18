@@ -20,15 +20,7 @@ The demo notebooks can be repurposed to run on an advertiser's own data simply b
 ## Requirements
 
 * **User:** Crystalvalue users should be familiar with basic Python.
-* **Data:** Crystalvalue expects that the input data is stored in Bigquery. The input data should either be transaction data or browsing data that includes customer purchases (e.g. from Google Analytics or Adobe). This is what an example input table could look like:
-
-  customer_id  | date | transaction_value | country | operatingSystem | product_ids_purchased
-  ------- | -------- | -------- | -------- | -------- | --------
-  32670| 2021-06-04|11.23 | France| Android | 45,21,54
-  33890 | 2021-10-09| 23.43|Germany|  iOS |  12,34,65
-  32670 | 2021-09-02 | 42.11| France| Android| 12
-
-Only the following columns are required: a customer ID column, a transaction date column and a transaction value column. However, it is recommended to use more information in pLTV models to improve model performance. Crystalvalue can automatically detect and ingest any number of additional data fields (such as 'country', 'operatingSystem' and 'product_ids_purchased') without further input from the user. There is no strict limit on the amount of historical data required, however, more data is usually better. For an advertiser seeking to predict 365 days in the future using data 365 days in the past they will require at least 2 years of data.
+* iterm
 
 * **Google Cloud Platform:** The following APIs will be needed:
   * BigQuery
